@@ -4,8 +4,8 @@ dash-core-components==0.30.2
 dash-html-components==0.13.2
 dash-renderer==0.14.1
 dask==0.16.1
-gunicorn ==*
-os == *
+gunicorn ==0.19.3
+os == '*'
 Flask==0.12.2
 Flask-Compress==1.4.0
 Flask-Cors==3.0.3
