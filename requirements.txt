@@ -5,8 +5,8 @@ dash-core-components==0.30.2
 dash-html-components==0.13.2
 dash-renderer==0.14.1
 dask==0.16.1
-datashape==0.5.4
-decorator==4.3.0
+
+
 
 filelock==2.0.13
 Flask==0.12.2
