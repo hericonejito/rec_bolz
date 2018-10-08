@@ -7,7 +7,7 @@ from dash.dependencies import Input, Output, State
 import plotly.graph_objs as go
 
 import numpy as np
-import matplotlib.pyplot as plt
+
 import datetime
 from collections import defaultdict
 from collections import Counter
