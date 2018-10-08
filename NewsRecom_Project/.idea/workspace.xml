@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4fbf58ab-c194-4745-88b4-3849e3984190" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="M_RWR's.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/M_RWR's.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="402" column="12" lean-forward="false" selection-start-line="402" selection-start-column="12" selection-end-line="437" selection-end-column="68" />
+              <folding>
+                <element signature="e#7926#9151#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="personalized_prank.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/personalized_prank.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="410" column="63" lean-forward="false" selection-start-line="410" selection-start-column="63" selection-end-line="410" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="M_MST.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/M_MST.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="533" column="57" lean-forward="false" selection-start-line="533" selection-start-column="57" selection-end-line="533" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="M_PathSim's.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/M_PathSim's.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="291" column="12" lean-forward="false" selection-start-line="291" selection-start-column="12" selection-end-line="292" selection-end-column="24" />
+              <folding>
+                <marker date="1526579117334" expanded="true" signature="6334:6416" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="M_sessionKNN.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/M_sessionKNN.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="405" column="12" lean-forward="false" selection-start-line="405" selection-start-column="12" selection-end-line="419" selection-end-column="106" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="M_Comparison.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/M_Comparison.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-10905">
+              <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="M_Comparison2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/M_Comparison2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-63">
+              <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plots.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="54" column="85" lean-forward="false" selection-start-line="54" selection-start-column="85" selection-end-line="54" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>MIN_N_SESSIONS</find>
+      <find>empty</find>
+      <find>2:</find>
+      <find>tim</find>
+      <find>order</find>
+      <find>log</find>
+      <find>S1547</find>
+      <find>Session: S1547</find>
+      <find>cop</find>
+      <find>Time spli</find>
+      <find>time s</find>
+      <find>time sp</find>
+      <find>UAUA</find>
+      <find>UAUA): {</find>
+      <find>Session: S9151</find>
+      <find>UAUA): {'A</find>
+      <find>time split</find>
+      <find>derive</find>
+      <find>assign</find>
+      <find>converged</find>
+      <find>avg</find>
+      <find>else pop_</find>
+      <find>time</find>
+      <find>time spli</find>
+      <find>time spl</find>
+      <find>print</find>
+      <find>rwr</find>
+      <find>Session: S11091</find>
+      <find>S11091</find>
+      <find>11091</find>
+    </findStrings>
+  </component>
+  <component name="GotoClassSymbolConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="BuildoutCfg" />
+      <filtered-out-file-type name="CommandLine" />
+      <filtered-out-file-type name="DTD" />
+      <filtered-out-file-type name="HTML" />
+      <filtered-out-file-type name="JQL" />
+      <filtered-out-file-type name="JSON" />
+      <filtered-out-file-type name="Markdown" />
+      <filtered-out-file-type name="Python" />
+      <filtered-out-file-type name="RELAX-NG" />
+      <filtered-out-file-type name="ReST" />
+      <filtered-out-file-type name="RegExp" />
+      <filtered-out-file-type name="TEXT" />
+      <filtered-out-file-type name="XHTML" />
+      <filtered-out-file-type name="XML" />
+      <filtered-out-file-type name="YouTrack" />
+      <filtered-out-file-type name="yaml" />
+    </file-type-list>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mean_sigmoid_timeview.py" />
+        <option value="$PROJECT_DIR$/data_import.py" />
+        <option value="$PROJECT_DIR$/M_Timeviews.py" />
+        <option value="$PROJECT_DIR$/M_ExplRandWalks.py" />
+        <option value="$PROJECT_DIR$/graph_manipulation.py" />
+        <option value="$PROJECT_DIR$/M_Statistics.py" />
+        <option value="$PROJECT_DIR$/M_ExplMetaPaths.py" />
+        <option value="$PROJECT_DIR$/M_MetaPaths_SDF.py" />
+        <option value="$PROJECT_DIR$/M_PathCountLength.py" />
+        <option value="$PROJECT_DIR$/M_MetaPaths.py" />
+        <option value="$PROJECT_DIR$/M_IB.py" />
+        <option value="$PROJECT_DIR$/time_aware_splits.py" />
+        <option value="$PROJECT_DIR$/M_UB.py" />
+        <option value="$PROJECT_DIR$/simrank.py" />
+        <option value="$PROJECT_DIR$/M_SB(AB).py" />
+        <option value="$PROJECT_DIR$/M_AB(combined).py" />
+        <option value="$PROJECT_DIR$/M_Explainability.py" />
+        <option value="$PROJECT_DIR$/M_SB.py" />
+        <option value="$PROJECT_DIR$/M_Explainability_UI.py" />
+        <option value="$PROJECT_DIR$/M_UB+Expl.py" />
+        <option value="$PROJECT_DIR$/M_SB+Expl.py" />
+        <option value="$PROJECT_DIR$/M_SimRank's.py" />
+        <option value="$PROJECT_DIR$/M_AB+Expl.py" />
+        <option value="$PROJECT_DIR$/M_AB_short_trains.py" />
+        <option value="$PROJECT_DIR$/M_AB.py" />
+        <option value="$PROJECT_DIR$/popularity_based_rec.py" />
+        <option value="$PROJECT_DIR$/accuracy_evaluation.py" />
+        <option value="$PROJECT_DIR$/M_RWR's.py" />
+        <option value="$PROJECT_DIR$/M_SML.py" />
+        <option value="$PROJECT_DIR$/M_PathSim's.py" />
+        <option value="$PROJECT_DIR$/M_MST.py" />
+        <option value="$PROJECT_DIR$/pathsim.py" />
+        <option value="$PROJECT_DIR$/M_sessionKNN.py" />
+        <option value="$PROJECT_DIR$/personalized_prank.py" />
+        <option value="$PROJECT_DIR$/plots.py" />
+        <option value="$PROJECT_DIR$/M_Comparison.py" />
+        <option value="$PROJECT_DIR$/M_Comparison2.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="525" />
+    <option name="y" value="49" />
+    <option name="width" value="1400" />
+    <option name="height" value="990" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Video33_Project_Newest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Video33_Project_Newest" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lida\Documents\DMf\MD\Video33_ArticleRecom\Video33_Project_Newest" />
+      <recent name="C:\Users\Lida\Documents\DMf\MD\Video33_ArticleRecom\Video33_Project_Newest\Data\Results" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.M_Comparison2">
+    <configuration name="M_Comparison" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Video33_Project_New" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/M_Comparison.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="M_Comparison2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Video33_Project_New" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/M_Comparison2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="M_MST" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Video33_Project_New" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/M_MST.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="M_sessionKNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Video33_Project_New" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/M_sessionKNN.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="plots" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Video33_Project_New" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plots.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.M_MST" />
+      <item index="1" class="java.lang.String" itemvalue="Python.M_sessionKNN" />
+      <item index="2" class="java.lang.String" itemvalue="Python.M_Comparison" />
+      <item index="3" class="java.lang.String" itemvalue="Python.plots" />
+      <item index="4" class="java.lang.String" itemvalue="Python.M_Comparison2" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.M_Comparison2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.M_Comparison" />
+        <item index="2" class="java.lang.String" itemvalue="Python.plots" />
+        <item index="3" class="java.lang.String" itemvalue="Python.M_sessionKNN" />
+        <item index="4" class="java.lang.String" itemvalue="Python.M_MST" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fbf58ab-c194-4745-88b4-3849e3984190" name="Default" comment="" />
+      <created>1520763454090</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520763454090</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16354166" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4160998" sideWeight="0.321875" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879817" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2845805" sideWeight="0.678125" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879817" sideWeight="0.54322916" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39929742" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/personalized_prank.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3520">
+          <caret line="165" column="15" lean-forward="false" selection-start-line="165" selection-start-column="15" selection-end-line="165" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_MetaPaths.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7414">
+          <caret line="351" column="0" lean-forward="false" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_SML.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6116">
+          <caret line="290" column="18" lean-forward="false" selection-start-line="290" selection-start-column="18" selection-end-line="292" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_MST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6204">
+          <caret line="282" column="24" lean-forward="true" selection-start-line="282" selection-start-column="24" selection-end-line="282" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_MetaPaths.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5764">
+          <caret line="275" column="0" lean-forward="true" selection-start-line="275" selection-start-column="0" selection-end-line="275" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_Timeviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3806">
+          <caret line="186" column="85" lean-forward="false" selection-start-line="186" selection-start-column="85" selection-end-line="186" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_ExplMetaPaths.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4026">
+          <caret line="196" column="111" lean-forward="false" selection-start-line="196" selection-start-column="111" selection-end-line="196" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_ExplRandWalks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5192">
+          <caret line="249" column="16" lean-forward="false" selection-start-line="249" selection-start-column="16" selection-end-line="251" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accuracy_evaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="87" column="22" lean-forward="false" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personalized_prank.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4246">
+          <caret line="198" column="0" lean-forward="false" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_manipulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3938">
+          <caret line="181" column="35" lean-forward="false" selection-start-line="181" selection-start-column="35" selection-end-line="181" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_Statistics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4070">
+          <caret line="199" column="39" lean-forward="true" selection-start-line="199" selection-start-column="39" selection-end-line="199" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rwr_vs_pathsim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="256" column="8" lean-forward="false" selection-start-line="256" selection-start-column="8" selection-end-line="270" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_Statistics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_ExplRandWalks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5148">
+          <caret line="247" column="42" lean-forward="false" selection-start-line="247" selection-start-column="42" selection-end-line="247" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_Timeviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3806">
+          <caret line="186" column="85" lean-forward="false" selection-start-line="186" selection-start-column="85" selection-end-line="186" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_ExplMetaPaths.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_MetaPaths_SDF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_PathCountLength.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2524">
+          <caret line="327" column="9" lean-forward="false" selection-start-line="327" selection-start-column="9" selection-end-line="327" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_IB.py" />
+    <entry file="file://$PROJECT_DIR$/M_MetaPaths.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7084">
+          <caret line="322" column="76" lean-forward="false" selection-start-line="322" selection-start-column="76" selection-end-line="322" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_UB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-311">
+          <caret line="237" column="12" lean-forward="false" selection-start-line="237" selection-start-column="12" selection-end-line="242" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_RWR's (SB).py" />
+    <entry file="file://$PROJECT_DIR$/M_SB(AB).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1436">
+          <caret line="329" column="81" lean-forward="false" selection-start-line="329" selection-start-column="81" selection-end-line="329" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_Explainability_SI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="264" column="0" lean-forward="false" selection-start-line="264" selection-start-column="0" selection-end-line="278" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_Explainability_UI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="250" column="94" lean-forward="false" selection-start-line="250" selection-start-column="94" selection-end-line="250" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_AB_short_trains.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6270">
+          <caret line="299" column="17" lean-forward="false" selection-start-line="299" selection-start-column="17" selection-end-line="299" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popularity_based_rec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accuracy_evaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1342">
+          <caret line="63" column="20" lean-forward="false" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_manipulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="201" column="39" lean-forward="false" selection-start-line="201" selection-start-column="32" selection-end-line="201" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="2908" column="0" lean-forward="false" selection-start-line="2908" selection-start-column="0" selection-end-line="2908" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_import.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-914">
+          <caret line="36" column="95" lean-forward="false" selection-start-line="36" selection-start-column="95" selection-end-line="36" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/time_aware_splits.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2524">
+          <caret line="170" column="51" lean-forward="false" selection-start-line="170" selection-start-column="51" selection-end-line="170" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_AB(combined).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1559">
+          <caret line="70" column="90" lean-forward="true" selection-start-line="70" selection-start-column="90" selection-end-line="70" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_AB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2739">
+          <caret line="37" column="14" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_SML.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="476" column="0" lean-forward="false" selection-start-line="476" selection-start-column="0" selection-end-line="476" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simrank.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_SimRank's.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="353" column="12" lean-forward="true" selection-start-line="353" selection-start-column="12" selection-end-line="353" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_MST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="533" column="57" lean-forward="false" selection-start-line="533" selection-start-column="57" selection-end-line="533" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personalized_prank.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="410" column="63" lean-forward="false" selection-start-line="410" selection-start-column="63" selection-end-line="410" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_sessionKNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="405" column="12" lean-forward="false" selection-start-line="405" selection-start-column="12" selection-end-line="419" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_PathSim's.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="291" column="12" lean-forward="false" selection-start-line="291" selection-start-column="12" selection-end-line="292" selection-end-column="24" />
+          <folding>
+            <marker date="1526579117334" expanded="true" signature="6334:6416" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_SB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="343" column="12" lean-forward="false" selection-start-line="343" selection-start-column="12" selection-end-line="343" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_SB+Expl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-933">
+          <caret line="327" column="77" lean-forward="true" selection-start-line="327" selection-start-column="77" selection-end-line="327" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_RWR's.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="402" column="12" lean-forward="false" selection-start-line="402" selection-start-column="12" selection-end-line="437" selection-end-column="68" />
+          <folding>
+            <element signature="e#7926#9151#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pathsim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2636">
+          <caret line="223" column="25" lean-forward="false" selection-start-line="223" selection-start-column="25" selection-end-line="223" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_AB+Expl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-197">
+          <caret line="428" column="84" lean-forward="true" selection-start-line="408" selection-start-column="12" selection-end-line="428" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_UB+Expl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="341" column="12" lean-forward="false" selection-start-line="341" selection-start-column="12" selection-end-line="344" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_Comparison.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10905">
+          <caret line="65" column="36" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="54" column="85" lean-forward="false" selection-start-line="54" selection-start-column="85" selection-end-line="54" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/M_Comparison2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
