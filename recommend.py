@@ -12,7 +12,7 @@ import datetime
 from collections import defaultdict
 from collections import Counter
 from operator import itemgetter
-import pickle
+
 import pandas as pd
 import networkx as nx
 from collections import defaultdict
@@ -625,9 +625,9 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
         print('First Time')
     else:
 
-        DATA_PATH = f'./NewsRecom_Project/Data/{data_path} - pk_client, pk_session, pk_article, timeview (s), date, time.txt'
-        CAT_DATA_PATH = f'./NewsRecom_Project/Data/{data_path}-5topics-doc-topics.txt'
-        LOC_DATA_PATH = f'./NewsRecom_Project/Data/{data_path} - pk_article, pk_district.txt'
+        DATA_PATH = f'./Data/{data_path} - pk_client, pk_session, pk_article, timeview (s), date, time.txt'
+        CAT_DATA_PATH = f'./Data/{data_path}-5topics-doc-topics.txt'
+        LOC_DATA_PATH = f'./Data/{data_path} - pk_article, pk_district.txt'
         gm = GraphManipulation()
         di = DataImport()
         di.import_user_click_data(DATA_PATH, adjust_pk_names=True)
