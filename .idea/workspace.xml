@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="106a6ed0-15b0-4104-a008-69144047109e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/background_jobs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recommend.py" afterPath="$PROJECT_DIR$/recommend.py" />
     </list>
     <ignored path="NewsRecom_Project/" />
@@ -20,13 +18,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="recommend.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="recommend.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recommend.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="893" column="0" lean-forward="false" selection-start-line="893" selection-start-column="0" selection-end-line="893" selection-end-column="0" />
+            <state relative-caret-position="452">
+              <caret line="362" column="57" lean-forward="false" selection-start-line="362" selection-start-column="43" selection-end-line="362" selection-end-column="57" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="M_ComparisonOfMethods+Expl.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NewsRecom_Project/M_ComparisonOfMethods+Expl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1513">
+              <caret line="110" column="53" lean-forward="false" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <marker date="1538821431774" expanded="true" signature="2554:2576" ph="..." />
               </folding>
             </state>
           </provider>
@@ -98,18 +109,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="popularity_based_rec.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/popularity_based_rec.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -149,7 +148,6 @@
       <find>filter_sessions</find>
       <find>MIN_ITEMS_N</find>
       <find>filter_short_sessions</find>
-      <find>filter</find>
       <find>itemitem_matrix</find>
       <find>train_g</find>
       <find>Next Ar</find>
@@ -163,6 +161,8 @@
       <find>dummy</find>
       <find>redi</find>
       <find>create_graph</find>
+      <find>filter</find>
+      <find>MIN_N_SESSIONS</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,6 +215,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="recommend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recommend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recommend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsRecom_Project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -525,28 +539,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/recommend.py</url>
-          <line>1600</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/recommend.py</url>
-          <line>1601</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/recommend.py</url>
-          <line>1597</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/recommend.py</url>
-          <line>85</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -725,17 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NewsRecom_Project/M_ComparisonOfMethods+Expl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12330">
-          <caret line="822" column="18" lean-forward="true" selection-start-line="822" selection-start-column="18" selection-end-line="822" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1538821431774" expanded="true" signature="2554:2576" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pathsim.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -878,10 +859,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/recommend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="893" column="0" lean-forward="false" selection-start-line="893" selection-start-column="0" selection-end-line="893" selection-end-column="0" />
+        <state relative-caret-position="452">
+          <caret line="362" column="57" lean-forward="false" selection-start-line="362" selection-start-column="43" selection-end-line="362" selection-end-column="57" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewsRecom_Project/M_ComparisonOfMethods+Expl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1513">
+          <caret line="110" column="53" lean-forward="false" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1538821431774" expanded="true" signature="2554:2576" ph="..." />
           </folding>
         </state>
       </provider>
