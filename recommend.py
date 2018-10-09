@@ -3,7 +3,7 @@ import gunicorn
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
-from dash.dependencies import Input, Output, State
+from dash.dependencies import Input, Output, State,Event
 import plotly.graph_objs as go
 
 import numpy as np
@@ -513,6 +513,11 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 app.layout = html.Div([
     dcc.Input(id='my-id', value='initial value', type='text'),
+    dcc.Interval(
+        id='interval-component',
+        interval=10 * 1000,  # in milliseconds
+        n_intervals=100
+    ),
     html.Div([
         dcc.Dropdown(
             id='xaxis-column',
@@ -594,8 +599,13 @@ app.layout = html.Div([
     ),],style={'columnCount': 3}),
     html.Button('Execute',id='execute'),
     html.Div([
+        html.Div(id='log_updates'),
+
+
         dcc.Graph(id='evaluation'),
-        dcc.Textarea(id='details')
+
+
+
     ])
 ],)
 
@@ -607,6 +617,11 @@ app.layout = html.Div([
 # def update_output_div(input_value):
 #     return 'You\'ve entered "{}"'.format(input_value)
 
+@app.callback(Output(component_id='log_updates',component_property='children'),
+              events=[Event('interval-component','interval')])
+def update_text_area():
+    print('Loading')
+    return 'Loading '
 
 @app.callback(
     Output(component_id='evaluation', component_property='figure'),
