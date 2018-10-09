@@ -34,14 +34,14 @@ class GraphManipulation:
         for s in sessions:
             session_start = df[df['pk_session'] == s]['date-time'].min()
             self.G.add_node(s, datetime=session_start, entity='S')
-
+        print(f'Finished Sessions')
         # --- Create edges from users to sessions with the edge type "US"
         for u in users:
             s_list = list(df[df['pk_user'] == u]['pk_session'])
             for s in s_list:
                 #self.G.add_edges_from([(u, s)], edge_type='US')
                 self.G.add_edge(u, s, edge_type='US')
-
+        print(f'Finished Users')
         # --- Create edges from sessions to articles with the edge type "SA",
         # each edge has an additional attributes "reading_datetime" (when article was read)
         # and "timeview" (for how long the article was being read)
@@ -54,14 +54,14 @@ class GraphManipulation:
                                             (df[pk_item] == a)]['timeview'].values[0])
                 #self.G.add_edges_from([(s, a)], edge_type='SA', reading_datetime=date_time, timeview=timeview)
                 self.G.add_edge(s, a, edge_type='SA', reading_datetime=date_time, timeview=timeview)
-
+        print(f'Finished Sessions Articles')
         if self.G_structure == 'USAC':
             categories = df.pk_category.unique()
             self.G.add_nodes_from(categories, entity='C')
             for a in articles:
                 c = list(df[df[self.pk_item] == a]['pk_category'])[0]
                 self.G.add_edge(a, c, edge_type='AC')
-
+        print(f'USAC')
 
     # def add_categories_data(self, cat_df):
     #

@@ -5,7 +5,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output, State,Event
 import plotly.graph_objs as go
-
+from datetime import datetime
 import numpy as np
 
 import datetime
@@ -655,14 +655,24 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
         # di.remove_inactive_users(n_sessions=MIN_N_SESSIONS)
         #
         # ---------- Add categories -----------------------------
+        print(f'{datetime.datetime.now()} Import Categories')
         di.import_categories_data(CAT_DATA_PATH)
+        print(f'{datetime.datetime.now()} Import Categories End')
 
+        print(f'{datetime.datetime.now()} Filter Short Session')
         # ---- Leave only sessions with at least specified number of articles
         di.filter_short_sessions(n_items=min_items_n)
+        print(f'{datetime.datetime.now()} Filter Short Session End')
+
 
         # ------ Create a graph on the base of the dataframe ----
+        print(f'{datetime.datetime.now()} Graph Manipulation')
         gm = GraphManipulation(G_structure='USAC')
+        print(f'{datetime.datetime.now()} Graph Manipulation End')
+
+        print(f'{datetime.datetime.now()} Create Graph')
         gm.create_graph(di.user_ses_df)
+        print(f'{datetime.datetime.now()} Create Graph End')
 
         # Filter again, because dataframe filtering leaves sessions where the same article is repeatedly read several times
         # gm.filter_sessions(gm.G, n_items=MIN_ITEMS_N)
