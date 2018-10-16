@@ -32,7 +32,7 @@ WIN_SIZE = 1 # How many time intervals back are taken (not used anymore for preq
 SHORT_DAYS = 2
 N = 5 # Number of recommendations to be provided for each user
 # MIN_ITEMS_N: Minimum number of items to be revealed from test session before building a recommendation
-MIN_ITEMS_N = 3 # Minimum number of items to be revealed from test session before building a recommendation
+MIN_ITEMS_N = 1 # Minimum number of items to be revealed from test session before building a recommendation
 MIN_N_SESSIONS = 1 # If we want to filter active users - what should be their minimum number of sessions
 
 
@@ -69,9 +69,9 @@ file_or_pickle = 'F'
 # pickle_name = 'Articles_AllData'
 # pickle_name = 'Articles_AllData_loc'
 # pickle_name = 'SDF_Articles_AllData_loc'
-pickle_name = 'Video33'
+# pickle_name = 'Video33'
 # pickle_name = 'SDF'
-# pickle_name = 'KIM'
+pickle_name = 'KIM'
 # pickle_name = 'Articles_LongSessions(2)'
 # pickle_name = 'Articles_LongSessions(2)_loc'
 # pickle_name = 'Articles_LongSessions(3)'

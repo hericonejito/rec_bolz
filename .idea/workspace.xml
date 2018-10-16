@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="106a6ed0-15b0-4104-a008-69144047109e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/KIM.gpickle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/SDF.gpickle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/Video33.gpickle" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump.rdb" afterPath="$PROJECT_DIR$/dump.rdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewsRecom_Project/Data/Pickles/SDF.gpickle" afterPath="$PROJECT_DIR$/NewsRecom_Project/Data/Pickles/SDF.gpickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewsRecom_Project/Data/Pickles/Video33.gpickle" afterPath="$PROJECT_DIR$/NewsRecom_Project/Data/Pickles/Video33.gpickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewsRecom_Project/M_ComparisonOfMethods+Expl.py" afterPath="$PROJECT_DIR$/NewsRecom_Project/M_ComparisonOfMethods+Expl.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recommend.py" afterPath="$PROJECT_DIR$/recommend.py" />
     </list>
     <ignored path="NewsRecom_Project/" />
@@ -18,26 +27,50 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="recommend.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="recommend.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recommend.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="362" column="57" lean-forward="false" selection-start-line="362" selection-start-column="43" selection-end-line="362" selection-end-column="57" />
+            <state relative-caret-position="293">
+              <caret line="716" column="53" lean-forward="true" selection-start-line="716" selection-start-column="53" selection-end-line="716" selection-end-column="53" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#3994#4010#0" expanded="false" />
+                <element signature="e#10028#10064#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="M_ComparisonOfMethods+Expl.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="simrank.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simrank.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accuracy_evaluation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accuracy_evaluation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="M_ComparisonOfMethods+Expl.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NewsRecom_Project/M_ComparisonOfMethods+Expl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1513">
-              <caret line="110" column="53" lean-forward="false" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="53" />
+            <state relative-caret-position="420">
+              <caret line="109" column="28" lean-forward="false" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1538821431774" expanded="true" signature="2554:2576" ph="..." />
+                <marker date="1539182135295" expanded="true" signature="2556:2576" ph="..." />
               </folding>
             </state>
           </provider>
@@ -47,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/background_jobs.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
-              <caret line="649" column="33" lean-forward="true" selection-start-line="649" selection-start-column="33" selection-end-line="649" selection-end-column="33" />
+              <caret line="649" column="33" lean-forward="false" selection-start-line="649" selection-start-column="33" selection-end-line="649" selection-end-column="33" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -69,21 +102,9 @@
         <entry file="file://$PROJECT_DIR$/worker.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+              <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding>
                 <element signature="e#113#122#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graph_manipulation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graph_manipulation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-685">
-              <caret line="63" column="20" lean-forward="false" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,8 +113,8 @@
       <file leaf-file-name="dash.py" pinned="false" current-in-tab="false">
         <entry file="file:///anaconda3/lib/python3.6/site-packages/dash/dash.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="707" column="0" lean-forward="false" selection-start-line="707" selection-start-column="0" selection-end-line="707" selection-end-column="0" />
+            <state relative-caret-position="191">
+              <caret line="605" column="0" lean-forward="false" selection-start-line="605" selection-start-column="0" selection-end-line="605" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,28 +130,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accuracy_evaluation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accuracy_evaluation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -142,11 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nx</find>
-      <find>networkx</find>
-      <find>NUM_S</find>
-      <find>filter_sessions</find>
-      <find>MIN_ITEMS_N</find>
       <find>filter_short_sessions</find>
       <find>itemitem_matrix</find>
       <find>train_g</find>
@@ -162,8 +156,25 @@
       <find>redi</find>
       <find>create_graph</find>
       <find>filter</find>
+      <find>Finished</find>
       <find>MIN_N_SESSIONS</find>
+      <find>Loading</find>
+      <find>e+=</find>
+      <find>status</find>
+      <find>+=</find>
+      <find>print</find>
+      <find>sa_train_g</find>
+      <find>RWR_SA</find>
+      <find>rwr_sa_s_rec</find>
+      <find>methods</find>
+      <find>subgraphs</find>
+      <find>SimRank_SAL</find>
+      <find>Simrank</find>
+      <find>sknn_rwr_sa_rec</find>
     </findStrings>
+    <replaceStrings>
+      <replace>subgraph</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -176,11 +187,11 @@
         <option value="$PROJECT_DIR$/NewsRecom_Project/M_ComparisonOfMainMethods.py" />
         <option value="$PROJECT_DIR$/NewsRecom_Project/personalized_prank.py" />
         <option value="$PROJECT_DIR$/NewsRecom_Project/plots.py" />
-        <option value="$PROJECT_DIR$/NewsRecom_Project/M_ComparisonOfMethods+Expl.py" />
         <option value="$PROJECT_DIR$/graph_manipulation.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/worker.py" />
         <option value="$PROJECT_DIR$/background_jobs.py" />
+        <option value="$PROJECT_DIR$/NewsRecom_Project/M_ComparisonOfMethods+Expl.py" />
         <option value="$PROJECT_DIR$/recommend.py" />
       </list>
     </option>
@@ -242,6 +253,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="NewsRecom_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recommend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recommend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewsRecom_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pickles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recommend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recommend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -261,7 +312,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.worker">
+  <component name="RunManager" selected="Python.M_ComparisonOfMethods+Expl">
     <configuration default="false" name="recommend" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -491,9 +542,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.recommend" />
-        <item index="1" class="java.lang.String" itemvalue="Python.worker" />
-        <item index="2" class="java.lang.String" itemvalue="Python.plots" />
-        <item index="3" class="java.lang.String" itemvalue="Python.M_ComparisonOfMethods+Expl" />
+        <item index="1" class="java.lang.String" itemvalue="Python.M_ComparisonOfMethods+Expl" />
+        <item index="2" class="java.lang.String" itemvalue="Python.worker" />
+        <item index="3" class="java.lang.String" itemvalue="Python.plots" />
         <item index="4" class="java.lang.String" itemvalue="Python.M_ComparisonOfMainMethods" />
       </list>
     </recent_temporary>
@@ -513,9 +564,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="23" width="1873" height="1057" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -542,7 +593,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="68" />
+      <option name="time" value="93" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -553,6 +604,8 @@
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#3994#4010#0" expanded="false" />
+            <element signature="e#10028#10064#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -732,17 +785,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accuracy_evaluation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -795,20 +838,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graph_manipulation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-685">
           <caret line="63" column="20" lean-forward="false" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -817,14 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///anaconda3/lib/python3.6/site-packages/dash/dash.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="707" column="0" lean-forward="false" selection-start-line="707" selection-start-column="0" selection-end-line="707" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -840,7 +867,7 @@
     <entry file="file://$PROJECT_DIR$/worker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding>
             <element signature="e#113#122#0" expanded="true" />
           </folding>
@@ -850,30 +877,90 @@
     <entry file="file://$PROJECT_DIR$/background_jobs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="649" column="33" lean-forward="true" selection-start-line="649" selection-start-column="33" selection-end-line="649" selection-end-column="33" />
+          <caret line="649" column="33" lean-forward="false" selection-start-line="649" selection-start-column="33" selection-end-line="649" selection-end-column="33" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recommend.py">
+    <entry file="file://$PROJECT_DIR$/NewsRecom_Project/M_ComparisonOfMethods+Expl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="362" column="57" lean-forward="false" selection-start-line="362" selection-start-column="43" selection-end-line="362" selection-end-column="57" />
+        <state relative-caret-position="420">
+          <caret line="109" column="28" lean-forward="false" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1539182135295" expanded="true" signature="2556:2576" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NewsRecom_Project/M_ComparisonOfMethods+Expl.py">
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/dash/dash.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1513">
-          <caret line="110" column="53" lean-forward="false" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="53" />
+        <state relative-caret-position="191">
+          <caret line="605" column="0" lean-forward="false" selection-start-line="605" selection-start-column="0" selection-end-line="605" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/KIM.gpickle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/SDF.gpickle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Video33.gpickle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accuracy_evaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1538821431774" expanded="true" signature="2554:2576" ph="..." />
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simrank.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="716" column="53" lean-forward="true" selection-start-line="716" selection-start-column="53" selection-end-line="716" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#3994#4010#0" expanded="false" />
+            <element signature="e#10028#10064#0" expanded="false" />
           </folding>
         </state>
       </provider>

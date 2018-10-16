@@ -112,10 +112,12 @@ app.layout = html.Div([
         options=[
             {'label': 'Users', 'value': 'U'},
             {'label': 'Articles', 'value': 'A'},
-            {'label': 'Sessions', 'value': 'S'}
+            {'label': 'Sessions', 'value': 'S'},
+            {'label': 'Locations', 'value': 'L'},
+            {'label': 'Categories', 'value': 'C'},
         ],
         values=['S', 'A']
-    ),]),
+    ),],style={'columnCount': 3}),
     html.Br(),
     html.Label('Methods Comparison',style={'font-weight':'bold'}),
     html.Div([
@@ -130,7 +132,9 @@ app.layout = html.Div([
         values=['RWR',]
     ),],style={'columnCount': 3}),
     html.Button('Execute',id='execute'),
-    html.Div(id='status'),
+    html.Button('Toggle Details',id='hide'),
+    html.Div(id='status_wrap',children=[html.Div(id='status',style={'white-space':'pre-wrap'}),]),
+
     html.Div([
 
         html.Div(children='', id='dummy-results'),
@@ -304,8 +308,19 @@ app.layout = html.Div([
 @app.callback(Output(component_id='status',component_property='children'),
               events=[Event('interval-component','interval')])
 def update_text_area():
-    print('Loading')
-    return 'Loading '
+    global e
+    return e
+
+@app.callback(Output(component_id='status',component_property='style'),
+              [Input('hide','n_clicks')])
+def toggle_details(n_clicks):
+    if n_clicks==None:
+        return {'white-space':'pre-wrap'}
+    else:
+        if n_clicks%2==0:
+            return {'display':'block','white-space':'pre-wrap'}
+        else:
+            return {'display':'none'}
 
 @app.callback(
     Output(component_id='evaluation', component_property='figure'),
@@ -320,77 +335,91 @@ def update_text_area():
               ]
 )
 def update_div(n_clicks,data_path,number_splits,short_days,number_recommendations,min_items_n,nodes,methods):
+    import itertools
     if n_clicks == None:
         print('First Time')
     else:
 
-        DATA_PATH = f'./Data/{data_path} - pk_client, pk_session, pk_article, timeview (s), date, time.txt'
-        CAT_DATA_PATH = f'./Data/{data_path}-5topics-doc-topics.txt'
-        LOC_DATA_PATH = f'./Data/{data_path} - pk_article, pk_district.txt'
-        gm = GraphManipulation()
-        di = DataImport()
-        di.import_user_click_data(DATA_PATH, adjust_pk_names=True)
-        print('Sterguis')
-        # --- Reduce dataset to 1 month / 1 week / ...
-        # di.reduce_timeframe(dt.datetime(2017,3,1), dt.datetime(2017,3,31)) # if G_Video33_1month is selected
-        # di.reduce_timeframe(dt.datetime(2017, 3, 1), dt.datetime(2017, 3, 7)) # if G_Video33_1week is selected
-
-        # --- Remove inactive users (the ones with small number of sessions in total)
-        # di.remove_inactive_users(n_sessions=MIN_N_SESSIONS)
+        # DATA_PATH = f'./Data/{data_path} - pk_client, pk_session, pk_article, timeview (s), date, time.txt'
+        # CAT_DATA_PATH = f'./Data/{data_path}-5topics-doc-topics.txt'
+        # LOC_DATA_PATH = f'./Data/{data_path} - pk_article, pk_district.txt'
+        # gm = GraphManipulation()
+        # di = DataImport()
+        # di.import_user_click_data(DATA_PATH, adjust_pk_names=True)
+        # print('Sterguis')
+        # # --- Reduce dataset to 1 month / 1 week / ...
+        # # di.reduce_timeframe(dt.datetime(2017,3,1), dt.datetime(2017,3,31)) # if G_Video33_1month is selected
+        # # di.reduce_timeframe(dt.datetime(2017, 3, 1), dt.datetime(2017, 3, 7)) # if G_Video33_1week is selected
         #
-        # ---------- Add categories -----------------------------
-        print(f'{datetime.datetime.now()} Import Categories')
-        di.import_categories_data(CAT_DATA_PATH)
-        print(f'{datetime.datetime.now()} Import Categories End')
-
-        print(f'{datetime.datetime.now()} Filter Short Session')
-        # ---- Leave only sessions with at least specified number of articles
-        di.filter_short_sessions(n_items=min_items_n)
-        print(f'{datetime.datetime.now()} Filter Short Session End')
-
-
-        # ------ Create a graph on the base of the dataframe ----
-        print(f'{datetime.datetime.now()} Graph Manipulation')
-        gm = GraphManipulation(G_structure='USAC')
-        print(f'{datetime.datetime.now()} Graph Manipulation End')
-
-        print(f'{datetime.datetime.now()} Create Graph')
-        gm.create_graph(di.user_ses_df)
-        print(f'{datetime.datetime.now()} Create Graph End')
-
-        # Filter again, because dataframe filtering leaves sessions where the same article is repeatedly read several times
-        # gm.filter_sessions(gm.G, n_items=MIN_ITEMS_N)
-        # gm.filter_users(gm.G, n_sessions=MIN_N_SESSIONS)
-
-        # ---------- Add locations ------------------------------
-        di.import_locations_data(LOC_DATA_PATH)
-        gm.add_locations_data(di.locations_data)
-        G = gm.G
+        # # --- Remove inactive users (the ones with small number of sessions in total)
+        # # di.remove_inactive_users(n_sessions=MIN_N_SESSIONS)
+        # #
+        # # ---------- Add categories -----------------------------
+        # print(f'{datetime.datetime.now()} Import Categories')
+        # di.import_categories_data(CAT_DATA_PATH)
+        # print(f'{datetime.datetime.now()} Import Categories End')
+        #
+        # print(f'{datetime.datetime.now()} Filter Short Session')
+        # # ---- Leave only sessions with at least specified number of articles
+        # di.filter_short_sessions(n_items=min_items_n)
+        # print(f'{datetime.datetime.now()} Filter Short Session End')
+        #
+        #
+        # # ------ Create a graph on the base of the dataframe ----
+        # print(f'{datetime.datetime.now()} Graph Manipulation')
+        # gm = GraphManipulation(G_structure='USAC')
+        # print(f'{datetime.datetime.now()} Graph Manipulation End')
+        #
+        # print(f'{datetime.datetime.now()} Create Graph')
+        # gm.create_graph(di.user_ses_df)
+        # print(f'{datetime.datetime.now()} Create Graph End')
+        #
+        # # Filter again, because dataframe filtering leaves sessions where the same article is repeatedly read several times
+        # # gm.filter_sessions(gm.G, n_items=MIN_ITEMS_N)
+        # # gm.filter_users(gm.G, n_sessions=MIN_N_SESSIONS)
+        #
+        # # ---------- Add locations ------------------------------
+        # di.import_locations_data(LOC_DATA_PATH)
+        # gm.add_locations_data(di.locations_data)
+        # G = gm.G
+        gm = GraphManipulation()
+        G = nx.read_gpickle(f'./Data/{data_path}.gpickle')
+        possible_subgraphs = [('S','A'), ('U','S','A'), ('S','A','C'), ('S','A','L'), ('U','S','A','C'), ('U','S','A','L')]
+        subgraphs =[]
+        for length in range(2,len(nodes)+1):
+            x = list(itertools.permutations(nodes,length))
+            for item in x:
+                if item in possible_subgraphs:
+                    subgraphs.append(item)
+        # gm.filter_users(gm.G, n_sessions=min)
+        gm.G = G
+        gm.filter_sessions(gm.G, n_items=min_items_n)
         print('Stergios')
-        print('\n--- GENERAL STATISTICS ---')
-        print('Number of users:', len(gm.get_users(G)))
-        print('Number of sessions:', len(gm.get_sessions(G)))
-        print('Number of articles:', len(gm.get_articles(G)))
-        print('Number of categories:', len(gm.get_categories(G)))
-        print('Number of locations:', len(gm.get_locations(G)))
+        global e
+        e+=('\n--- GENERAL STATISTICS ---')
+        e+=(f'\nNumber of users:{len(gm.get_users(G))}')
+        e +=(f'\nNumber of sessions:{len(gm.get_sessions(G))}')
+        e +=(f'\nNumber of articles:{len(gm.get_articles(G))}')
+        e +=(f'\nNumber of categories:{len(gm.get_categories(G))}')
+        e +=(f'\nNumber of locations:{len(gm.get_locations(G))}')
 
         art_per_session = gm.get_articles_per_session(gm.G)
-        print('Avg # of articles per session:', round(np.mean(art_per_session), 2))
-        print('Max # of articles per session:', round(np.max(art_per_session), 2))
+        e +=(f'\nAvg # of articles per session:{round(np.mean(art_per_session), 2)}')
+        e +=(f'\nMax # of articles per session:{round(np.max(art_per_session), 2)}')
 
         ses_per_user = gm.get_sessions_per_user(gm.G)
-        print('Avg # of sessions per user:', round(np.mean(ses_per_user), 2))
-        print('Max # of sessions per user:', round(np.max(ses_per_user), 2))
+        e +=(f'\nAvg # of sessions per user:{round(np.mean(ses_per_user), 2)}')
+        e +=(f'\nMax # of sessions per user:{round(np.max(ses_per_user), 2)}')
 
         tas = TimeAwareSplits(G)
         tas.create_time_split_graphs(G, num_splits=number_splits)
         tas.create_time_window_graphs(1)
         _dump_process = True
         short_back_timedelta = datetime.timedelta(days=short_days)
-        print('--------------------------\nTime span list:\n', tas.time_span_list)
+        e +=(f'\n--------------------------\nTime span list:\n{tas.time_span_list}')
         pop = PopularityBasedRec(G, number_recommendations)
 
-        RWR_SA = PersonalizedPageRankBasedRec(number_recommendations)
+        # RWR_SA = PersonalizedPageRankBasedRec(number_recommendations)
 
         ae = AccuracyEvaluation(G)
 
@@ -400,10 +429,10 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
         n_recommendation = dict()
         sessions_per_user_in_short_term = []
         avg_ses_len = defaultdict(list)
-
+        methods_to_be_evaluated=[]
         for tw_i, tw_iter in enumerate(tas.time_window_graph_list):
 
-            print('\n\n======= Time split', tw_i, '=======')
+            e +=(f'\n\n======= Time split{tw_i} =======')
 
             n_recommendation[tw_i] = 0
 
@@ -449,10 +478,11 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
                                                                     test_session_graph=test_session_G)
                     if len(short_train_g) == 0:
                         continue
-                    print(f'user:{user}')
+
+                    e+=f'\nuser:{user}'
                     active_users = gm.get_users(short_train_g)
-                    print(f'active users : {user in active_users}')
-                    print(f'Next Article : {articles[i]}')
+                    e+=f'\nactive users : {user in active_users}'
+                    e+= f'\nNext Article : {articles[i]}'
                     test_session_G.add_nodes_from(articles[:i], entity='A')
                     for a in articles[:i]:
                         test_session_G.add_edge(s, a, edge_type='SA')
@@ -476,13 +506,35 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
                     n_articles_train.append(len(gm.get_articles(short_train_g)))
                     ses_per_user = gm.get_sessions_per_user(short_train_g)
                     sessions_per_user_in_short_term.append(Counter(ses_per_user))
-
+                    subgraphs_train = []
                     # --- Create train graphs
-                    sa_train_g = gm.create_subgraph_of_adjacent_entities(short_train_g, list_of_entities=['S', 'A'])
+                    for subgraph in subgraphs:
+                        if len(subgraph)==2:
+                            subgraphs_train.append((gm.create_subgraph_of_adjacent_entities(short_train_g,
+                                                                    list_of_entities=[subgraph[0][0], subgraph[1]]),f'{subgraph[0]}_{subgraph[1]}'))
+                        elif len(subgraph)==3:
+                            subgraphs_train.append((gm.create_subgraph_of_adjacent_entities(short_train_g,
+                                                                                           list_of_entities=[
+                                                                                               subgraph[0],
+                                                                                               subgraph[1],subgraph[2]]),f'{subgraph[0]}_{subgraph[1]}_{subgraph[2]}'))
+                        elif len(subgraph)==4:
+                            subgraphs_train.append((gm.create_subgraph_of_adjacent_entities(short_train_g,
+                                                                                           list_of_entities=[
+                                                                                               subgraph[0],
+                                                                                               subgraph[1],
+                                                                                               subgraph[2],subgraph[3]]),f'{subgraph[0]}_{subgraph[1]}_{subgraph[2]}_{subgraph[3]}'))
+                        else:
+                            subgraphs_train.append((gm.create_subgraph_of_adjacent_entities(short_train_g,
+                                                                                           list_of_entities=[
+                                                                                               subgraph[0],
+                                                                                               subgraph[1],
+                                                                                               subgraph[2],
+                                                                                               subgraph[3],subgraph[4]]),f'{subgraph[0]}_{subgraph[1]}_{subgraph[2]}_{subgraph[3]}_{subgraph[4]}'))
+                    # sa_train_g = gm.create_subgraph_of_adjacent_entities(short_train_g, list_of_entities=['S', 'A'])
                     # usa_train_g = gm.create_subgraph_of_adjacent_entities(short_train_g, list_of_entities=['U', 'S', 'A'])
                     # sac_train_g = gm.create_subgraph_of_adjacent_entities(short_train_g, list_of_entities=['S', 'A', 'C'])
-                    sal_train_g = gm.create_subgraph_of_adjacent_entities(short_train_g,
-                                                                          list_of_entities=['S', 'A', 'L'])
+                    # sal_train_g = gm.create_subgraph_of_adjacent_entities(short_train_g,
+                    #                                                       list_of_entities=['S', 'A', 'L'])
                     # usac_train_g = gm.create_subgraph_of_adjacent_entities(short_train_g, list_of_entities=['U', 'S', 'A', 'C'])
                     # usal_train_g = gm.create_subgraph_of_adjacent_entities(short_train_g, list_of_entities=['U', 'S', 'A', 'L'])
 
@@ -493,18 +545,18 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
 
 
                     # -----------------------------------------------------
-                    # ------------------- Popularity ----------------------
-                    pop.compute_pop(short_train_g)
+
 
                     # -----------------------------------------------------
                     # ------------------- SimRank -------------------------
 
-                    # SimRank_SAL.compute_similarity_matrix(sal_train_g, max_iter=10)
+
 
                     # -----------------------------------------------------
                     # ------------------- RWR -----------------------------
                     # --- Run models
-                    RWR_SA.compute_transition_matrix(sa_train_g)
+
+                    # RWR_SA.compute_transition_matrix(sa_train_g)
                     # RWR_USA.compute_transition_matrix(usa_train_g)
                     # RWR_SAC.compute_transition_matrix(sac_train_g)
                     # RWR_SAL.compute_transition_matrix(sal_train_g)
@@ -515,7 +567,7 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
                     # --- Extract SS matrices
                     # RWR_SA.create_sessionsession_matrix()
                     # RWR_SA.create_sessionitem_matrix()
-                    RWR_SA.create_itemitem_matrix()
+
                     # RWR_USA.create_sessionsession_matrix()
                     # RWR_USA.create_sessionitem_matrix()
                     # RWR_USA.create_itemitem_matrix()
@@ -589,21 +641,47 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
                     session_timeviews = [gm.map_timeview(test_g, s, a) for a in articles[:i]]
 
                     # ------- POP --------------------------
+                    # ------------------- Popularity ----------------------
+                    if 'POP' in methods:
+                        pop.compute_pop(short_train_g)
+                        pop_rec = pop.predict_next(user, articles[:i])
 
-                    pop_rec = pop.predict_next(user, articles[:i])
-                    if len(pop_rec) == 0:
-                        continue
+                        if len(pop_rec) == 0:
+                            continue
+                        else:
+                            methods_to_be_evaluated.append((pop_rec, 'POP'))
 
                     # ------- SimRank ----------------------
-
-                    # simrank_sal_s_rec = SimRank_SAL.predict_next(user, articles[:i], method=2)
-                    # if len(simrank_sal_s_rec) == 0:
-                    #     continue
+                    if 'Simrank' in methods:
+                        simrank_models = []
+                        for subgraph_train in subgraphs_train:
+                            simrank = SimRankRec(number_recommendations)
+                            simrank.compute_similarity_matrix(subgraph_train[0], max_iter=10)
+                            simrank_models.append((simrank,subgraph_train[1]))
+                        for simrank_model in simrank_models:
+                            recommendation = simrank_model[0].predict_next(user, articles[:i], method=2)
+                            if len(recommendation) == 0:
+                                continue
+                            else:
+                                methods_to_be_evaluated.append((recommendation, f'Simrank_{simrank_model[1]}'))
 
                     # ------- RWR --------------------------
-
+                    if 'RWR' in methods:
+                        rwr_models = []
+                        for subgraph_train in subgraphs_train:
+                            RWR = PersonalizedPageRankBasedRec(number_recommendations)
+                            RWR.compute_transition_matrix(subgraph_train[0])
+                            RWR.create_itemitem_matrix()
+                            rwr_models.append((RWR, subgraph_train[1]))
+                        for rwr_model in rwr_models:
+                            recommendation = rwr_model[0].predict_next(user,articles[:i])
+                            if len(recommendation) == 0:
+                                continue
+                            else:
+                                methods_to_be_evaluated.append((recommendation,f'RWR_{rwr_model[1]}'))
                     # rwr_ua_s_rec = RWR_UA.predict_next(user, articles[:i], method=2)
-                    rwr_sa_s_rec = RWR_SA.predict_next(user, articles[:i], method=2)
+
+                    # rwr_sa_s_rec = RWR_SA.predict_next(user, articles[:i], method=2)
                     # if len(rwr_sa_s_rec) == 0:
                     #     continue
                     # rwr_ac_s_rec = RWR_AC.predict_next(user, articles[:i], method=2)
@@ -650,7 +728,8 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
 
                     # ------- Session-kNN ------------------
 
-                    # sknn_rwr_sa_rec = RWR_SA.predict_next_by_sessionKNN(s, kNN_RWR)
+                    # sknn_rwr_sa_rec = RWR_SA.
+                    # (s, kNN_RWR)
                     # sknn_rwr_usa_rec = RWR_USA.predict_next_by_sessionKNN(s, kNN_RWR
                     # sknn_rwr_sac_rec = RWR_SAC.predict_next_by_sessionKNN(s, kNN_RWR)
                     # sknn_rwr_sal_rec = RWR_SAL.predict_next_by_sessionKNN(s, kNN_RWR)
@@ -838,33 +917,35 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
 
                     # ------------------------------------------------------------
 
-                    methods = [pop_rec,
-                               # rwr_sal_s_rec,
-                               rwr_sa_s_rec,
-                               # rwr_usacl_s_rec,
-                               # sknn_rwr_usacl_rec,
-                               # ab_aua_rec, ab_asa_rec, ab_aca_rec, ab_ala_rec, ab_comb_rec,
-                               # ab_all_aua_rec, ab_all_asa_rec, ab_all_aca_rec, ab_all_ala_rec, ab_all_comb_rec,
-                               # sb_sasa_rec, sb_scsa_rec, sb_slsa_rec, sb_comb_rec,
-                               # ub_uaua_rec, ub_ucua_rec, ub_ulua_rec, ub_comb_rec
-                               ]
+                    # methods = [pop_rec,
+                    #            # rwr_sal_s_rec,
+                    #            rwr_sa_s_rec,
+                    #            # rwr_usacl_s_rec,
+                    #            # sknn_rwr_usacl_rec,
+                    #            # ab_aua_rec, ab_asa_rec, ab_aca_rec, ab_ala_rec, ab_comb_rec,
+                    #            # ab_all_aua_rec, ab_all_asa_rec, ab_all_aca_rec, ab_all_ala_rec, ab_all_comb_rec,
+                    #            # sb_sasa_rec, sb_scsa_rec, sb_slsa_rec, sb_comb_rec,
+                    #            # ub_uaua_rec, ub_ucua_rec, ub_ulua_rec, ub_comb_rec
+                    #            ]
                     # methods = [pop_rec,
                     #            ab_aua_rec, ab_asa_rec, ab_aca_rec, ab_ala_rec, ab_comb_rec,
                     #            ab_all_aua_rec, ab_all_asa_rec, ab_all_aca_rec, ab_all_ala_rec, ab_all_comb_rec,
                     #            sb_sasa_rec, sb_scsa_rec, sb_slsa_rec, sb_comb_rec,
                     #            ub_uaua_rec, ub_ucua_rec, ub_ulua_rec, ub_comb_rec]
 
-                    if any(len(m) == 0 for m in methods):
+                    if any(len(m) == 0 for m in methods_to_be_evaluated):
                         continue
 
                     n_recommendation[tw_i] += 1
 
                     # ------- Measuring accuracy ----------------------
-                    ae.evaluate_recommendation(rec=pop_rec, truth=articles[i], method='POP', s=s)
+                    # ae.evaluate_recommendation(rec=pop_rec, truth=articles[i], method='POP', s=s)
 
                     # ae.evaluate_recommendation(rec=simrank_sal_s_rec, truth=articles[i], method='SimRank_SAL(s)', s=s)
+                    for method in methods_to_be_evaluated:
 
-                    ae.evaluate_recommendation(rec=rwr_sa_s_rec, truth=articles[i], method='RWR_SA(s)', s=s)
+                        ae.evaluate_recommendation(rec=method[0],truth=articles[i],method=method[1],s=s)
+                    # ae.evaluate_recommendation(rec=rwr_sa_s_rec, truth=articles[i], method='RWR_SA(s)', s=s)
                     # ae.evaluate_recommendation(rec=rwr_usa_s_rec, truth=articles[i], method='RWR_USA(s)', s=s)
                     # ae.evaluate_recommendation(rec=rwr_sac_s_rec, truth=articles[i], method='RWR_SAC(s)', s=s)
                     # ae.evaluate_recommendation(rec=rwr_sal_s_rec, truth=articles[i], method='RWR_SAL(s)', s=s)
@@ -925,20 +1006,19 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
         avg_n_ses_per_train_per_period = [round(np.mean(l)) for l in train_len_dict.values()]
         avg_ses_len_per_period = [round(np.mean(l), 2) for l in avg_ses_len.values()]
 
-        print('\n\n\nNumber of sessions per user per short train period:\n', sessions_per_user_in_short_term)
-        print('# of recommendations per time split:', n_recommendation.values())
-        print('Total # of recs:', sum(n_recommendation.values()))
-        print('Average # sessions per train per period', avg_n_ses_per_train_per_period)
-        print('Average # artiles per session per period', avg_ses_len_per_period)
-        print('Average # sessions in train:', round(np.mean(train_set_len), 2))
-        print('Average # articles in train:', round(np.mean(n_articles_train), 2))
+        e +=(f'\n\n\nNumber of sessions per user per short train period:\n{sessions_per_user_in_short_term}')
+        e +=(f'\n# of recommendations per time split:{n_recommendation.values()}')
+        e +=(f'\nTotal # of recs:{sum(n_recommendation.values())}')
+        e +=(f'\nAverage # sessions per train per period {avg_n_ses_per_train_per_period}')
+        e +=(f'\nAverage # artiles per session per period {avg_ses_len_per_period}')
+        e +=(f'\nAverage # sessions in train:{round(np.mean(train_set_len), 2)}')
+        e +=(f'\nAverage # articles in train:{round(np.mean(n_articles_train), 2)}')
 
-        print('\n---------- METHODS EVALUATION -------------')
+        e+=('\n---------- METHODS EVALUATION -------------')
 
         methods = [k for k, v in sorted(ae.precision.items(), key=itemgetter(1), reverse=True)]
         for m in methods:
-            print('---', m, ': Precision:', ae.precision[m], 'NDCG:', ae.ndcg[m], 'ILD:', ae.diversity[m],
-                  'Explainability:', ae.explainability[m])
+            e +=(f'\n--- {m}: Precision:{ae.precision[m]}, NDCG:{ae.ndcg[m]}, ILD:{ae.diversity[m]},Explainability:{ae.explainability[m]}')
 
         # exit()
 
