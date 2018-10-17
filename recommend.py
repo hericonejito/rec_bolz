@@ -44,7 +44,7 @@ server = app.server
 app.layout = html.Div([
     html.Div(id='job_id',style={'display':'none'}),
 
-    dcc.Input(id='my-id', value='initial value', type='text'),
+    # dcc.Input(id='my-id', value='initial value', type='text'),
     dcc.Interval(
         id='interval-component',
         interval=10 * 1000,  # in milliseconds
@@ -116,7 +116,7 @@ app.layout = html.Div([
             {'label': 'Locations', 'value': 'L'},
             {'label': 'Categories', 'value': 'C'},
         ],
-        values=['S', 'A']
+        values=['U','S', 'A']
     ),],style={'columnCount': 3}),
     html.Br(),
     html.Label('Methods Comparison',style={'font-weight':'bold'}),
@@ -126,10 +126,10 @@ app.layout = html.Div([
             {'label': 'Pop', 'value': 'POP'},
             {'label': 'RWR', 'value': 'RWR'},
             {'label': 'Simrank', 'value': 'Simrank'},
-            {'label': 'Pathsim', 'value': 'Pathsim'},
-            {'label': 'SKNN', 'value': 'SKNN'}
+            # {'label': 'Pathsim', 'value': 'Pathsim'},
+            # {'label': 'SKNN', 'value': 'SKNN'}
         ],
-        values=['RWR',]
+        values=['RWR','POP']
     ),],style={'columnCount': 3}),
     html.Button('Execute',id='execute'),
     html.Button('Toggle Details',id='hide'),
@@ -384,7 +384,7 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
         # G = gm.G
         gm = GraphManipulation()
         G = nx.read_gpickle(f'./Data/{data_path}.gpickle')
-        possible_subgraphs = [('S','A'), ('U','S','A'), ('S','A','C'), ('S','A','L'), ('U','S','A','C'), ('U','S','A','L')]
+        possible_subgraphs = [('U','A'),('S','A'),('A','C'),('A','L'), ('U','S','A'),('U','A','C'),('U','A','L'),('A','C','L'), ('S','A','C'), ('S','A','L'), ('U','S','A','C'), ('U','S','A','L'), ('U','A','C','L'), ('S','A','C','L')]
         subgraphs =[]
         for length in range(2,len(nodes)+1):
             x = list(itertools.permutations(nodes,length))
@@ -481,7 +481,7 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
 
                     e+=f'\nuser:{user}'
                     active_users = gm.get_users(short_train_g)
-                    e+=f'\nactive users : {user in active_users}'
+                    # e+=f'\nactive users : {user in active_users}'
                     e+= f'\nNext Article : {articles[i]}'
                     test_session_G.add_nodes_from(articles[:i], entity='A')
                     for a in articles[:i]:
@@ -646,10 +646,10 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
                         pop.compute_pop(short_train_g)
                         pop_rec = pop.predict_next(user, articles[:i])
 
-                        if len(pop_rec) == 0:
-                            continue
-                        else:
-                            methods_to_be_evaluated.append((pop_rec, 'POP'))
+                        # if len(pop_rec) == 0:
+                        #     continue
+                        # else:
+                        methods_to_be_evaluated.append((pop_rec, 'POP'))
 
                     # ------- SimRank ----------------------
                     if 'Simrank' in methods:
