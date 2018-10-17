@@ -396,6 +396,7 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
         gm.filter_sessions(gm.G, n_items=min_items_n)
         print('Stergios')
         global e
+        e = ''
         e+=('\n--- GENERAL STATISTICS ---')
         e+=(f'\nNumber of users:{len(gm.get_users(G))}')
         e +=(f'\nNumber of sessions:{len(gm.get_sessions(G))}')
@@ -479,10 +480,8 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
                     if len(short_train_g) == 0:
                         continue
 
-                    e+=f'\nuser:{user}'
-                    active_users = gm.get_users(short_train_g)
-                    # e+=f'\nactive users : {user in active_users}'
-                    e+= f'\nNext Article : {articles[i]}'
+
+
                     test_session_G.add_nodes_from(articles[:i], entity='A')
                     for a in articles[:i]:
                         test_session_G.add_edge(s, a, edge_type='SA')
@@ -945,6 +944,11 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
                     for method in methods_to_be_evaluated:
 
                         ae.evaluate_recommendation(rec=method[0],truth=articles[i],method=method[1],s=s)
+                        e += f'\nuser:{user}'
+                        active_users = gm.get_users(short_train_g)
+                        e+=f'\nactive users : {user in active_users}'
+                        e += f'\nNext Article : {articles[i]}'
+                        e += f'\n{method[1]}_rec: {method[0]}'
                     # ae.evaluate_recommendation(rec=rwr_sa_s_rec, truth=articles[i], method='RWR_SA(s)', s=s)
                     # ae.evaluate_recommendation(rec=rwr_usa_s_rec, truth=articles[i], method='RWR_USA(s)', s=s)
                     # ae.evaluate_recommendation(rec=rwr_sac_s_rec, truth=articles[i], method='RWR_SAC(s)', s=s)
@@ -1027,8 +1031,8 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
         p_end = tas.time_span_list[len(tas.time_span_list) - 1][1] + datetime.timedelta(days=1)
         month_range = pd.date_range(p_start, p_end, freq='M')
         p = []
-        for period in month_range:
-            p.append(datetime.datetime.strftime(period, format='%Y-%m'))
+        for period in tas.time_span_list:
+            p.append(datetime.datetime.strftime(period[1], format='%Y-%m-%d'))
         traces =[]
         for method in methods:
             trace = go.Scatter(x = p,y=ae.tw_precision[method],name=method)
