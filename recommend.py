@@ -126,7 +126,7 @@ app.layout = html.Div([
             {'label': 'Pop', 'value': 'POP'},
             {'label': 'RWR', 'value': 'RWR'},
             {'label': 'Simrank', 'value': 'Simrank'},
-            # {'label': 'Pathsim', 'value': 'Pathsim'},
+            {'label': 'Pathsim', 'value': 'Pathsim'},
             # {'label': 'SKNN', 'value': 'SKNN'}
         ],
         values=['RWR','POP']
@@ -678,7 +678,27 @@ def update_div(n_clicks,data_path,number_splits,short_days,number_recommendation
                                 continue
                             else:
                                 methods_to_be_evaluated.append((recommendation,f'RWR_{rwr_model[1]}'))
-                    # rwr_ua_s_rec = RWR_UA.predict_next(user, articles[:i], method=2)
+
+                    if 'Pathsim' in methods:
+                        pathsim_models = []
+                        if 'A' in nodes:
+                            for node in nodes:
+                                if node!='A':
+                                    pathsim = PathSimRec(number_recommendations)
+                                    pathsim.compute_similarity_matrix(short_train_g,'A',node,1)
+                                    pathsim_models.append((pathsim,f'Pathsim_A_{node}'))
+
+                            for pathsim_model in pathsim_models:
+                                recommendation = pathsim_model[0].predict_next(user, articles[:i], method=2)
+                                if len(recommendation)==0:
+                                    continue
+                                else:
+                                    methods_to_be_evaluated.append((recommendation,pathsim_model[1]))
+                        # PathSim_AUA.compute_similarity_matrix(short_train_g, 'A', 'U', 2)
+                        # PathSim_ASA.compute_similarity_matrix(short_train_g, 'A', 'S', 1)
+                        # PathSim_ACA.compute_similarity_matrix(short_train_g, 'A', 'C', 1)
+                        # PathSim_ALA.compute_similarity_matrix(short_train_g, 'A', 'L', 1)
+                     # rwr_ua_s_rec = RWR_UA.predict_next(user, articles[:i], method=2)
 
                     # rwr_sa_s_rec = RWR_SA.predict_next(user, articles[:i], method=2)
                     # if len(rwr_sa_s_rec) == 0:
